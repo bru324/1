@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6c1cc, #fbe4ea);
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+/* Animação de entrada */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  background: #ffffff;
+  max-width: 420px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Botão principal */
+.btn {
+  display: block;
+  background: #f2b6c2;
+  color: #000;
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 15px 0;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ec9fb0;
+}
+
+/* Accordion */
+.accordion-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #f4d0d8;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.accordion-btn:hover {
+  background: #f0bfc9;
+  transform: scale(1.02);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #fff5f7;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 0 15px;
+}
+
+.accordion-content p {
+  text-align: left;
+  font-size: 14px;
+  margin: 10px 0;
+  transition: 0.2s;
+}
+
+.accordion-content p:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Redes sociais */
+.social {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram {
+  color: #000;          /* preto */
+  font-size: 20px;      /* tamanho do ícone */
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.instagram:hover {
+  opacity: 0.6;         /* efeito suave ao passar o mouse */
+}
