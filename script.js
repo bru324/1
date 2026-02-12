@@ -19,4 +19,3 @@ function abrirWhats(mensagem) {
   const link = `https://wa.me/${numeroWhats}?text=${texto}`;
   window.open(link, "_blank");
 }
-554499601672
