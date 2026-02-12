@@ -6,10 +6,11 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #f7b2b6, #ffffff);
+  background: linear-gradient(135deg, #f7b2b6 0%, #fdf5f7 100%); /* degradê suavizado para consistência */
   display: flex;
   justify-content: center;
   padding: 30px 10px;
+  -webkit-text-size-adjust: 100%; /* evita ajustes automáticos de cor/tamanho no mobile */
 }
 
 /* Fade-in */
@@ -174,6 +175,10 @@ h1 {
 
 /* Responsividade */
 @media screen and (max-width: 480px) {
+  body {
+    background: linear-gradient(135deg, #f7b2b6 0%, #fdf5f7 100%); /* garante degradê consistente no mobile */
+  }
+
   .about-content {
     flex-direction: column;
     align-items: center;
@@ -181,5 +186,13 @@ h1 {
 
   .about-text {
     text-align: center;
+  }
+}
+
+/* Força cores consistentes em dispositivos móveis com modo escuro */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #f7b2b6 0%, #fdf5f7 100%);
+    color-scheme: light;
   }
 }
