@@ -1,4 +1,4 @@
-const numeroWhats = "5544998104219";
+const numeroWhats = "554499601672";
 
 const buttons = document.querySelectorAll(".accordion-btn");
 
